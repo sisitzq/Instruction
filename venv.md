@@ -4,7 +4,7 @@ by default stores environments in a central directory (commonly ~/.virtualenvs)
 ```
 
 JupyterLab
-```
+```python
 register each virtual environment as a Jupyter kernel. Once you’ve created and activated your environment, install ipykernel:
 
   pip install ipykernel
@@ -20,14 +20,14 @@ select the interpreter for your project by opening the Command Palette (Ctrl+Shi
 VS Code will scan for interpreters, including those in your centralized directory (e.g., ~/.virtualenvs).
 ```
 
+```python
 python3 -m venv .venv
-```
 source .venv/bin/activate   # in ubunutu
 . .venv/Scripts/Activate  # in PS shell
 ```
 
 python is python3: 
-```
+```shell
 sudo nano ~/.bashrc
 add  alias python=python3
 
@@ -35,7 +35,7 @@ source ~/.bashrc
 ```
 
 install pytorch
-```
+```shell
 pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128
 ```
 
